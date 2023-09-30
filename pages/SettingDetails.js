@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useRoute } from "@react-navigation/native";
+import { useRoute } from "@/nreact-navigationative";
 import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
 import { colors, layout } from "../style";
 import Alert from "../components/Alert";
@@ -14,6 +14,17 @@ import InputText from "../components/InputText";
 export default function SettingDetails(props) {
   const [isModalVisible, setModalVisible] = useState(false);
   const route = useRoute();
+  let isStateUpdated = true;
+  {
+    /* state로 바꿀 것 */
+  }
+  let isButton = true;
+
+  let alertContent = {
+    title: "Go back",
+    desc: "Going back will not save your changes.\n Do you still want to go back?",
+    rightBtn: "Go back",
+  };
   let isStateUpdated = true;
   {
     /* state로 바꿀 것 */
