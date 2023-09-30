@@ -4,7 +4,7 @@ import Alert from '../components/Alert'
 import Board from '../components/Board'
 import BottomModal from '../components/Modal/Modal'
 import Card from '../components/Container/Card'
-import ChartStackedBars from '../components/Charts/ChartStackedBars'
+import ChartStackedBar from '../components/Charts/ChartStackedBar'
 import ChartWaterdrop from '../components/Charts/ChartWaterdrop'
 import Header from '../components/Header/Header'
 import Nav from '../components/Nav'
@@ -110,22 +110,9 @@ export default function StatisticsDaily({ navigation }) {
             <ChartWaterdrop />
           </Card>
           <Card title={'Daily Intake Composition'}> 
-            <ChartStackedBars />
+            <ChartStackedBar />
           </Card>
           <Card title={'Today’s Weight'}>
-            <Text>15151515</Text>
-            <Text>15151515</Text>
-            <Text>15151515</Text>
-            <Text>15151515</Text>
-            <Text>15151515</Text>
-            <Text>15151515</Text>
-            <Text>15151515</Text>
-            <Text>15151515</Text>
-            <Text>15151515</Text>
-            <Text>15151515</Text>
-            <Text>15151515</Text>
-            <Text>15151515</Text>
-            <Text>15151515</Text>
             <Text>15151515</Text>
           </Card>
         </ScrollView> :<Board data={boardData} />
@@ -157,7 +144,6 @@ const styles = StyleSheet.create({
     fontWeight: 600
   },
   mainContentContainer: {
-    borderWidth: 1,
     flex: 1,
   }
 });

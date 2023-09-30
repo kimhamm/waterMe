@@ -51,34 +51,6 @@ export default function StatisticsWeekly({ navigation }) {
         </Card>
         <Card title={'Weekly Weight Change'} >
           <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
-          <ChartTimeline />
         </Card>
       </ScrollView>
       <Nav navigation={navigation} />

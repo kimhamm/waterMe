@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import {StyleSheet, View} from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 import {colors, layout} from '../style'
 import Alert from '../components/Alert'
 import Badge from '../components/Badge'
@@ -26,8 +26,11 @@ export default function Status(props) {
 
   return (
     <View style={styles.container}>
-      <ChartWaterdrop />
+      <View style={styles.waterdropContainer}>
+        <ChartWaterdrop />
+      </View>
       <ChartTimeline />
+      <Text style={styles.text}>Add a Record</Text>
       <SlideHorizontalCards />
       <BottomModal prop={{ isBottomModalOn, setBottomModalOn, toggleBottomModal }} />      
       <Alert alertContent={alertContent}/>
@@ -39,4 +42,14 @@ export default function Status(props) {
 
 const styles = StyleSheet.create({
   container: layout,
+  waterdropContainer: {
+    marginTop: 50,
+    marginBottom: 10,
+  },
+  text: {
+    fontSize: 12,
+    fontWeight: 700,
+    marginBottom: 10,
+    marginLeft: 3
+  },
 });

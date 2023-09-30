@@ -93,7 +93,10 @@ export default function SettingDetails(props) {
     content = <ProfileInput units={units} setUnits={setUnits} />;
   } else if (settingsTitle === 'Goal Setting') {
     content = <View style={styles.inputContainer} >
-      <InputText prop={{ key: 'name', value: '' }} />
+      <Text style={{marginBottom: 14, fontWeight: 600, }}>Set your daily water intake goal.</Text>
+      <InputText prop={{ key: 'goal', value: 'ml' }} />
+      <Text style={{textAlign: 'center', fontSize: 12, marginTop: 10, }}>Only between 1,000 and 10,000ml can be entered.</Text>
+      <Text style={{textAlign: 'center', fontSize: 12, marginTop: 10, }}>Only between 30 and 400oz can be entered.</Text>
     </View>
       
   } else if (settingsTitle === 'Unit Setting') {

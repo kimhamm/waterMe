@@ -25,7 +25,6 @@ export default function TempRouter(props) {
       <Text>- Splash 튕김</Text>
       <Text>- 이미지 첨부 오류</Text>
       <Text>- SetProfile InputNumber Modal 동작 안 함</Text>
-      <Text>- StatisticsDaily Header Toggle 활성화 표시 안 됨</Text>
       <Text>- gradient 라이브러리 적용 안 됨</Text>
     </View>
   );
